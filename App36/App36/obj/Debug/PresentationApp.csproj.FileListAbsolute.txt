@@ -1,0 +1,16 @@
+C:\Metide\PresentationApp\App36\App36\bin\Debug\App36.dll
+C:\Metide\PresentationApp\App36\App36\bin\Debug\App36.pdb
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Core.dll
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Core.xml
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Metide\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Metide\PresentationApp\App36\App36\obj\Debug\PresentationApp.csproj.CoreCompileInputs.cache
+C:\Metide\PresentationApp\App36\App36\obj\Debug\App36.MainPage.xaml.g.cs
+C:\Metide\PresentationApp\App36\App36\obj\Debug\App36.App.xaml.g.cs
+C:\Metide\PresentationApp\App36\App36\obj\Debug\App36.WorkPage.xaml.g.cs
+C:\Metide\PresentationApp\App36\App36\obj\Debug\App36.dll
+C:\Metide\PresentationApp\App36\App36\obj\Debug\App36.pdb

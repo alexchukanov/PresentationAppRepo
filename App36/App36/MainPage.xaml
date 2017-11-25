@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App36"
+             x:Class="App36.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="ButtonImage11" 
+                    x:TypeArguments="FileImageSource"
+                    Android="Category112.png"
+                    iOS="Assets/Category112.png"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+        <Grid ColumnSpacing ="10" RowSpacing ="0" IsClippedToBounds="True" Padding="5" BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="*" />
+                <ColumnDefinition Width ="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="0" Grid.Column="0" Source="Category112.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Image Grid.Row="0" Grid.Column="1" Source="Category123.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Image Grid.Row="1" Grid.Column="0" Source="Category21.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Image Grid.Row="1" Grid.Column="1" Source="Category22.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                       
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

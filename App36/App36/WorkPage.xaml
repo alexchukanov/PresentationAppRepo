@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App36.WorkPage">
+    <ContentPage.Content>
+
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />                
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="Auto" />
+                <ColumnDefinition Width ="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="0" Grid.Column="0" Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <Grid Grid.Row="0" Grid.Column="1" Padding="10" Margin="40,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="aUTO" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="Auto" />
+                <ColumnDefinition Width ="*" />               
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" FontSize="28" FontAttributes="Bold" Text="Illy Locator" TextColor="Goldenrod" />
+            <Label Grid.Row="1" Grid.Column="0" FontSize="20" Text="Illy" TextColor="Gray" />
+            <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"  Source="LogoIlly.png" HorizontalOptions="EndAndExpand"  />
+
+            <BoxView  Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" Margin="0, 10, 0, 0" HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand"/>
+
+                <Label Grid.Row="3" Grid.Column="0" FontSize="18" Margin="0, 10, 0, 0" Text="Categoria: Marketing" TextColor="Goldenrod" />
+                <Label Grid.Row="3" Grid.Column="1" FontSize="18" Margin="0, 10, 0, 0" Text="Store Locator" TextColor="Goldenrod" HorizontalOptions="EndAndExpand" />
+
+            <Label x:Name="lbDescription" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" TextColor="Gray"  HorizontalOptions="StartAndExpand" />
+            
+            </Grid>
+        </Grid>
+        
+       
+
+
+
+        <!--StackLayout Orientation="Horizontal" Margin="20, 40, 20, 40">
+            <Image  Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start" />
+            
+            <StackLayout Orientation="Vertical" Margin="40, 20, 0, 0">
+                
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical" >
+                        <Label FontSize="28"  Text="Illy Locator" TextColor="Goldenrod"   />
+                        <Image  Source="LogoIlly.png" VerticalOptions="End" HorizontalOptions="EndAndExpand" />
+                       
+                    </StackLayout>
+                    <Label FontSize="20" Text="Illy" TextColor="Gray"   />
+
+                </StackLayout>
+            </>
+        </>-->
+        
+    </ContentPage.Content>
+</ContentPage>
