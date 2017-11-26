@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App36.WorkPage"
-              Title="Work Page">
+              Title="Work List">
     <ContentPage.Content>
 
         <Grid Padding="10">
@@ -44,27 +44,6 @@
             
             </Grid>
         </Grid>
-        
-       
-
-
-
-        <!--StackLayout Orientation="Horizontal" Margin="20, 40, 20, 40">
-            <Image  Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start" />
-            
-            <StackLayout Orientation="Vertical" Margin="40, 20, 0, 0">
-                
-                <StackLayout Orientation="Horizontal">
-                    <StackLayout Orientation="Vertical" >
-                        <Label FontSize="28"  Text="Illy Locator" TextColor="Goldenrod"   />
-                        <Image  Source="LogoIlly.png" VerticalOptions="End" HorizontalOptions="EndAndExpand" />
-                       
-                    </StackLayout>
-                    <Label FontSize="20" Text="Illy" TextColor="Gray"   />
-
-                </StackLayout>
-            </>
-        </>-->
         
     </ContentPage.Content>
 </ContentPage>

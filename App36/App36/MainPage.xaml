@@ -3,56 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App36"
              x:Class="App36.MainPage"
-             Title="Category Page" Padding="0" BackgroundColor="Black">
+             Title="Mobile App Portfolio" Padding="0" BackgroundColor="Black">
 
-    
-        <!--Grid Padding="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>              
-                <ColumnDefinition Width ="*" />
-            </Grid.ColumnDefinitions>
-            
-          
-            <StackLayout Orientation="Vertical">
-                
-                
-                <StackLayout Orientation="Horizontal">
-                    <Image  Source="Marketing.png"  MinimumHeightRequest="300" MinimumWidthRequest="600" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
-
-                    <Image  Source="Production.png"   MinimumHeightRequest="300" MinimumWidthRequest="600" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal">
-                    <Image Grid.Row="2" Grid.Column="1" Source="IoT.png"   MinimumHeightRequest="300" MinimumWidthRequest="600" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
-
-                    <Image Grid.Row="2" Grid.Column="2" Source="Utility.png" MinimumHeightRequest="300" MinimumWidthRequest="600" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
-
-                </StackLayout>
-                
-            </StackLayout>
-
-        </> -->
-
-        <Grid ColumnSpacing ="0" RowSpacing ="0" BackgroundColor="Black" IsClippedToBounds="True" Margin="0, 5, 0, 5">
+        <Grid ColumnSpacing ="1" RowSpacing ="1" BackgroundColor="Black" IsClippedToBounds="True" Margin="0, 5, 0, 5">
             <Grid.RowDefinitions>               
                 <RowDefinition Height="*" />                
                 <RowDefinition Height="*" />               
