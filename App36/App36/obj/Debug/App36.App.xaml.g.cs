@@ -11,7 +11,7 @@
 namespace App36 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\XamarinProjects\\App36\\App36\\App36\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Metide\\MetideRepo\\PresentationApp\\App36\\App36\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

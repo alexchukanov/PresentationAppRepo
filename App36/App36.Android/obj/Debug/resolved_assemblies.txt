@@ -30,12 +30,12 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\asset
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
+C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
+C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Reflection.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Collections.dll
-C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.ObjectModel.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\System.Linq.Expressions.dll

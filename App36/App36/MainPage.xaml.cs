@@ -13,5 +13,11 @@ namespace App36
         {
             InitializeComponent();
         }
+
+        private async  void OnTapped(object sender, EventArgs e)
+        {
+            await   Navigation.PushAsync(new WorkPage());
+           // App.Current.MainPage = new WorkPage();
+        }        
     }
 }

@@ -2,35 +2,90 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App36"
-             x:Class="App36.MainPage">
+             x:Class="App36.MainPage"
+             Title="Category Page" Padding="0" BackgroundColor="Black">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <OnPlatform x:Key="ButtonImage11" 
-                    x:TypeArguments="FileImageSource"
-                    Android="Category112.png"
-                    iOS="Assets/Category112.png"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
-
-    <ContentPage.Content>
-        <Grid ColumnSpacing ="10" RowSpacing ="0" IsClippedToBounds="True" Padding="5" BackgroundColor="Black">
+    
+        <!--Grid Padding="10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width ="*" />
+            <Grid.ColumnDefinitions>              
                 <ColumnDefinition Width ="*" />
             </Grid.ColumnDefinitions>
+            
+          
+            <StackLayout Orientation="Vertical">
+                
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image  Source="Marketing.png"  MinimumHeightRequest="300" MinimumWidthRequest="600" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
 
-            <Image Grid.Row="0" Grid.Column="0" Source="Category112.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
-            <Image Grid.Row="0" Grid.Column="1" Source="Category123.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Image Grid.Row="1" Grid.Column="0" Source="Category21.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Image Grid.Row="1" Grid.Column="1" Source="Category22.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                       
+                    <Image  Source="Production.png"   MinimumHeightRequest="300" MinimumWidthRequest="600" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Grid.Row="2" Grid.Column="1" Source="IoT.png"   MinimumHeightRequest="300" MinimumWidthRequest="600" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Image Grid.Row="2" Grid.Column="2" Source="Utility.png" MinimumHeightRequest="300" MinimumWidthRequest="600" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </StackLayout>
+                
+            </StackLayout>
+
+        </> -->
+
+        <Grid ColumnSpacing ="0" RowSpacing ="0" BackgroundColor="Black" IsClippedToBounds="True" Margin="0, 5, 0, 5">
+            <Grid.RowDefinitions>               
+                <RowDefinition Height="*" />                
+                <RowDefinition Height="*" />               
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="*" />               
+                <ColumnDefinition Width ="*" />                
+            </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"   HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+         </Image>
+
+        <Image Grid.Row="0" Grid.Column="1" Source="Production.png"  HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+        <Image Grid.Row="1" Grid.Column="0" Source="IoT.png"  HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+        <Image Grid.Row="1" Grid.Column="1" Source="Utility.png" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>   
         </Grid>
-    </ContentPage.Content>
+    
 </ContentPage>

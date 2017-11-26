@@ -13,8 +13,10 @@ namespace App36
         {
             InitializeComponent();
 
-            //MainPage = new App36.MainPage();
-            MainPage = new App36.WorkPage();
+            MainPage = new App36.MainPage();
+            //MainPage = new App36.WorkPage();
+
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
