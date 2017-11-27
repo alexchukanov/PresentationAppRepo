@@ -24,6 +24,7 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Core.pd
 C:\Metide\MetideRepo\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Core.xml
 C:\Metide\MetideRepo\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\PresentationApp.csprojResolveAssemblyReference.cache
 C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\PresentationApp.csproj.CoreCompileInputs.cache
 C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\App36.MainPage.xaml.g.cs
 C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\App36.App.xaml.g.cs
@@ -31,4 +32,3 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\App36.WorkPage.xaml.g
 C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\App36.CouruselScreenPage.xaml.g.cs
 C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\App36.dll
 C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\App36.pdb
-C:\Metide\MetideRepo\PresentationApp\App36\App36\obj\Debug\PresentationApp.csprojResolveAssemblyReference.cache

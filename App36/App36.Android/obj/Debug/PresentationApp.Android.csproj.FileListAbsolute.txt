@@ -130,6 +130,7 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_open_in_new_black_36dp.png
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_keyboard_arrow_left_black_48dp.png
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_keyboard_arrow_right_black_48dp.png
+C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_slideshow_black_24dp.png
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\R.cs.flag
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\uploadflags.txt
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\bin\Debug\App36.dll.mdb
@@ -140,4 +141,3 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\asset
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_slideshow_black_24dp.png
