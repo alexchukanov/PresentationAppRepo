@@ -5,7 +5,7 @@
               Title="Work List">
     <ContentPage.Content>
 
-        <Grid Padding="10">
+        <Grid Padding="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />                
             </Grid.RowDefinitions>
@@ -15,8 +15,30 @@
                 <ColumnDefinition Width ="*" />
             </Grid.ColumnDefinitions>
 
-            <Image Grid.Row="0" Grid.Column="0" Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Image Grid.Row="0" Grid.Column="0" Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start"/>
 
+
+            <Image Grid.Row="0" Grid.Column="0" Source="ic_open_in_new_black_36dp.png"  HorizontalOptions="End" VerticalOptions="End" Margin="5" Opacity="0.4">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMoreScreenTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <!--Label Grid.Row="0" Grid.Column="0" FontSize="20"  Text="More..." TextColor="White" FontAttributes="Italic" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,10,10">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMoreScreenTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </>-->
+
+            <!--ScrollView Grid.Row="0" Grid.Column="0" Orientation="Vertical" IsClippedToBounds="True">
+                <StackLayout Orientation="Vertical" >
+                    <Image Source="WorkScreen.png" />
+                    <Image Source="WorkScreen.png" VerticalOptions="Start" HorizontalOptions="Center" />
+                    <Image Source="WorkScreen.png" VerticalOptions="Start" HorizontalOptions="Center" />
+                    <Image Source="WorkScreen.png" VerticalOptions="Start" HorizontalOptions="Center" />
+                </StackLayout>
+             </-->
+            
             <Grid Grid.Row="0" Grid.Column="1" Padding="10" Margin="40,10,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -32,16 +54,18 @@
             </Grid.ColumnDefinitions>
             
             <Label Grid.Row="0" Grid.Column="0" FontSize="28" FontAttributes="Bold" Text="Illy Locator" TextColor="Goldenrod" />
-            <Label Grid.Row="1" Grid.Column="0" FontSize="20" Text="Illy" TextColor="Gray" />
+            <Label Grid.Row="1" Grid.Column="0" FontSize="22"  Text="Illy" TextColor="Gray" />
             <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"  Source="LogoIlly.png" HorizontalOptions="EndAndExpand"  />
 
             <BoxView  Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" Margin="0, 10, 0, 0" HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand"/>
 
-                <Label Grid.Row="3" Grid.Column="0" FontSize="18" Margin="0, 10, 0, 0" Text="Categoria: Marketing" TextColor="Goldenrod" />
-                <Label Grid.Row="3" Grid.Column="1" FontSize="18" Margin="0, 10, 0, 0" Text="Store Locator" TextColor="Goldenrod" HorizontalOptions="EndAndExpand" />
+                <Label Grid.Row="3" Grid.Column="0" FontSize="20" Margin="0, 10, 0, 0" Text="Categoria: Marketing" TextColor="Goldenrod" />
+                <Label Grid.Row="3" Grid.Column="1" FontSize="20" Margin="0, 10, 0, 0" Text="Store Locator" TextColor="Goldenrod" HorizontalOptions="EndAndExpand" />
 
-            <Label x:Name="lbDescription" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" TextColor="Gray"  HorizontalOptions="StartAndExpand" />
-            
+                <ScrollView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
+                    <Label x:Name="lbDescription"  FontSize="18" TextColor="Gray"  HorizontalOptions="StartAndExpand" />
+                </ScrollView>
+
             </Grid>
         </Grid>
         

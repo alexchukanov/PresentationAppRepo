@@ -26,7 +26,12 @@ namespace App36
 "\n\nPREFIRITY: Curabitur ultrices purus ut ipsum ullamcorper, sit amet faucibus nisl commodo. Nulla aliquet ante eu leo tincidunt, a tempor nibh maximus." +
 "\n\nSHOP: Vestibulum varius bibendum metus. Aliquam erat volutpat. Vestibulum dignissim quam at ligula cursus iaculis." +
 "\n\nHELP: Aliquam malesuada nulla lacus, auctor interdum magna gravida molestie." +
-"\n\nSviluppatta nel 2015" ;
+"\n\nSviluppatta nel 2015";
+        }
+        
+        private async void OnMoreScreenTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CouruselScreenPage());
         }
     }
 }

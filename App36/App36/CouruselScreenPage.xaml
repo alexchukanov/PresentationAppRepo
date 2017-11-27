@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             x:Class="App36.CouruselScreenPage"
+             Title="Screen shots" BackgroundColor="Black">
+            
+        <cv:CarouselView x:Name="cwWorkScreen" >
+            <cv:CarouselView.ItemTemplate>
+                <DataTemplate>                   
+                    <Grid Padding="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width ="Auto" />
+                        <ColumnDefinition Width ="*" />
+                        <ColumnDefinition Width ="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Row="0" x:Name="btBack" Grid.Column="0" Opacity="0.5" Source="Icone_left.png" WidthRequest="48" HeightRequest="48"  VerticalOptions="Center" Margin="5" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="btBack_Tapped"  NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                     </Image>
+
+                    <Image x:Name="btForward" Grid.Row="0" Grid.Column="2" Opacity="0.5" Source="Icone_right.png" WidthRequest="48" HeightRequest="48"  VerticalOptions="Center" Margin="5">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="btForward_Tapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                        
+                    <Image Grid.Row="0" Grid.Column="1" Source="{Binding ImageUrl}" />
+                    <Label Grid.Row="1" Grid.Column="1" Margin="20,0,20,0" Text="{Binding Note}" TextColor="White" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="End"/>
+                </Grid>                    
+                </DataTemplate>                    
+            </cv:CarouselView.ItemTemplate>
+        </cv:CarouselView>    
+</ContentPage>
