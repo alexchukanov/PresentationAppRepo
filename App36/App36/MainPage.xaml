@@ -16,28 +16,28 @@
                 <ColumnDefinition Width ="*" />                
             </Grid.ColumnDefinitions>
 
-            <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"   HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
-             </Image>
-
-            <Image Grid.Row="0" Grid.Column="1" Source="Production.png"  HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
+            <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"  Aspect="Fill"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
             </Image>
 
-            <Image Grid.Row="1" Grid.Column="0" Source="IoT.png"  HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
+            <Image Grid.Row="0" Grid.Column="1" Source="Production.png" Aspect="Fill"  HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
             </Image>
 
-            <Image Grid.Row="1" Grid.Column="1" Source="Utility.png" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
+            <Image Grid.Row="1" Grid.Column="0" Source="IoT.png" Aspect="Fill" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+            </Image>
+
+            <Image Grid.Row="1" Grid.Column="1" Source="Utility.png" Aspect="Fill" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
             </Image>   
         </Grid>
     
