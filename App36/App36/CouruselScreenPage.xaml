@@ -14,27 +14,27 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width ="Auto" />
-                        <ColumnDefinition Width ="*" />
-                        <ColumnDefinition Width ="Auto" />
-                    </Grid.ColumnDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width ="Auto" />
+                            <ColumnDefinition Width ="*" />
+                            <ColumnDefinition Width ="Auto" />
+                        </Grid.ColumnDefinitions>
 
-                    <Image Grid.Row="0" x:Name="btBack" Grid.Column="0" Opacity="0.5" Source="Icone_left.png" WidthRequest="48" HeightRequest="48"  VerticalOptions="Center" Margin="5" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="btBack_Tapped"  NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                     </Image>
+                        <Image Grid.Row="0" x:Name="btBack" Grid.Column="0" Opacity="0.5" Source="Icone_left.png" WidthRequest="48" HeightRequest="48"  VerticalOptions="Center" Margin="5" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="btBack_Tapped"  NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                         </Image>
 
-                    <Image x:Name="btForward" Grid.Row="0" Grid.Column="2" Opacity="0.5" Source="Icone_right.png" WidthRequest="48" HeightRequest="48"  VerticalOptions="Center" Margin="5">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="btForward_Tapped" NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
+                        <Image x:Name="btForward" Grid.Row="0" Grid.Column="2" Opacity="0.5" Source="Icone_right.png" WidthRequest="48" HeightRequest="48"  VerticalOptions="Center" Margin="5">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="btForward_Tapped" NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
                         
-                    <Image Grid.Row="0" Grid.Column="1" Source="{Binding ImageUrl}" />
-                    <Label Grid.Row="1" Grid.Column="1" Margin="20,0,20,0" Text="{Binding Note}" TextColor="White" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="End"/>
-                </Grid>                    
+                        <Image Grid.Row="0" Grid.Column="1" Source="{Binding ImageUrl}" />
+                        <Label Grid.Row="1" Grid.Column="1" Margin="20,0,20,0" Text="{Binding Note}" TextColor="White" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="End"/>
+                    </Grid>                    
                 </DataTemplate>                    
             </cv:CarouselView.ItemTemplate>
         </cv:CarouselView>    

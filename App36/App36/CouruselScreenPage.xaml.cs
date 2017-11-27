@@ -15,7 +15,7 @@ namespace App36
     {
         public ObservableCollection<WorkScreen> WorkScreenList { get; set; }
 
-        int screenNum = 4;
+        int screenNum = 0;
         
         public CouruselScreenPage()
         {
@@ -47,9 +47,7 @@ namespace App36
 
             cwWorkScreen.ItemsSource = WorkScreenList;
             screenNum = WorkScreenList.Count();
-            
         }
-
        
 
         private void btBack_Tapped(object sender, EventArgs e)

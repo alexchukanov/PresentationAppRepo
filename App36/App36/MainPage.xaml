@@ -26,13 +26,13 @@
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
-                </Image>
+            </Image>
 
             <Image Grid.Row="1" Grid.Column="0" Source="IoT.png"  HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
-                </Image>
+            </Image>
 
             <Image Grid.Row="1" Grid.Column="1" Source="Utility.png" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
                     <Image.GestureRecognizers>
