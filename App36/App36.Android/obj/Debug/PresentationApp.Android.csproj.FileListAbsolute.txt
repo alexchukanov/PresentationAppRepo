@@ -140,3 +140,4 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\asset
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_slideshow_black_24dp.png
