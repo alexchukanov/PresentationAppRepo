@@ -4,8 +4,8 @@
              xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
              x:Class="App36.CouruselScreenPage"
              Title="Screen shots" BackgroundColor="Black">
-            
-        <cv:CarouselView x:Name="cwWorkScreen" >
+
+    <cv:CarouselView x:Name="cwWorkScreen">
             <cv:CarouselView.ItemTemplate>
                 <DataTemplate>                   
                     <Grid Padding="5">

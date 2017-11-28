@@ -5,7 +5,15 @@
              x:Class="App36.MainPage"
              Title="Mobile App Portfolio" Padding="0" BackgroundColor="Black">
 
-        <Grid ColumnSpacing ="1" RowSpacing ="1" BackgroundColor="Black" IsClippedToBounds="True" Margin="0, 5, 0, 5">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Company" Activated="OnClick"   Order="Primary" Priority="0"  />
+        <ToolbarItem Name="Solution" Activated="OnClick"  Order="Primary" Priority="1" />
+        <ToolbarItem Name="Contacts" Activated="OnClick"  Order="Primary" Priority="2"  />
+        <ToolbarItem Name="Settings" Activated="OnClick"  Order="Secondary" Priority="3" />
+    </ContentPage.ToolbarItems>
+
+
+    <Grid ColumnSpacing ="1" RowSpacing ="1" BackgroundColor="Black" IsClippedToBounds="True" Margin="0, 5, 0, 5">
             <Grid.RowDefinitions>               
                 <RowDefinition Height="*" />                
                 <RowDefinition Height="*" />               
@@ -16,7 +24,7 @@
                 <ColumnDefinition Width ="*" />                
             </Grid.ColumnDefinitions>
 
-            <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"  Aspect="Fill"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
+        <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"  Aspect="Fill"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>

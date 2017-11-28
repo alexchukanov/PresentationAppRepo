@@ -20,8 +20,8 @@ namespace App36
         public CouruselScreenPage()
         {
             InitializeComponent();
-
-            WorkScreenList = new ObservableCollection<WorkScreen>
+            
+            var workScreenList = new ObservableCollection<WorkScreen>
             {
                     new WorkScreen
                     {
@@ -44,6 +44,8 @@ namespace App36
                         Note = "Donec tincidunt arcu vitae est condimentum lacinia. Nullam at sem eu purus congue porta eget vel lorem. Aenean gravida diam tincidunt consequat tincidunt. Sed vel vestibulum eros, quis lacinia tortor."
                     }
             };
+
+            WorkScreenList = workScreenList;
 
             cwWorkScreen.ItemsSource = WorkScreenList;
             screenNum = WorkScreenList.Count();

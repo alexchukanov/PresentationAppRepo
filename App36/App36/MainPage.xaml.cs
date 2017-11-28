@@ -17,6 +17,11 @@ namespace App36
         private async  void OnTapped(object sender, EventArgs e)
         {
             await   Navigation.PushAsync(new WorkPage());
-        }        
+        }
+
+        private void OnClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
