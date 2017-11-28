@@ -16,11 +16,13 @@ namespace App36
         public ObservableCollection<WorkScreen> WorkScreenList { get; set; }
 
         int screenNum = 0;
-        
-        public CouruselScreenPage()
+        bool isTimerRun = false;
+        int sweepPeriod = 5;
+
+        public CouruselScreenPage(bool isSlideShow)
         {
             InitializeComponent();
-            
+                       
             var workScreenList = new ObservableCollection<WorkScreen>
             {
                     new WorkScreen
@@ -49,23 +51,58 @@ namespace App36
 
             cwWorkScreen.ItemsSource = WorkScreenList;
             screenNum = WorkScreenList.Count();
+
+            if(isSlideShow)
+            {
+                SlideShow();
+            }            
         }
-       
+
+        private  void SlideShow()
+        {
+            isTimerRun = true;
+
+            Device.StartTimer(TimeSpan.FromSeconds(sweepPeriod), () =>
+            {
+                if (cwWorkScreen.Position < screenNum - 1)
+                {
+                    ++cwWorkScreen.Position;                    
+                }
+                else
+                {
+                    cwWorkScreen.Position = 0;
+                }
+
+                return isTimerRun;
+            }
+            );           
+        }
 
         private void btBack_Tapped(object sender, EventArgs e)
         {
-           if (cwWorkScreen.Position > 0)
-           {               
+            isTimerRun = false;
+
+            if (cwWorkScreen.Position > 0)
+            {               
                 --cwWorkScreen.Position;
-           }
+            }
+            isTimerRun = false;
         }
 
         private void btForward_Tapped(object sender, EventArgs e)
         {
+            isTimerRun = false;
+
             if (cwWorkScreen.Position < screenNum - 1)
             {
                 ++cwWorkScreen.Position;
             }
+            isTimerRun = false;
+        }
+
+        private void btImage_Tapped(object sender, EventArgs e)
+        {
+            isTimerRun = false;
         }
     }
 }

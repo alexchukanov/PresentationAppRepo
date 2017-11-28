@@ -16,7 +16,11 @@ namespace App36
 
         private async  void OnTapped(object sender, EventArgs e)
         {
-            await   Navigation.PushAsync(new WorkPage());
+            //await ((Image)sender).RelScaleTo(0.5, 200, Easing.CubicOut);
+
+            await ((Image)sender).FadeTo(0.8);          
+            await Navigation.PushAsync(new WorkPage());
+            await ((Image)sender).FadeTo(1);
         }
 
         private void OnClick(object sender, EventArgs e)

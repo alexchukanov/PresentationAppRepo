@@ -31,7 +31,16 @@ namespace App36
         
         private async void OnMoreScreenTapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CouruselScreenPage());
+            await ((Image)sender).FadeTo(0.6);
+            await Navigation.PushAsync(new CouruselScreenPage(true));
+            await ((Image)sender).FadeTo(1);
+        }
+
+        private async void OnWorkScreenTapped(object sender, EventArgs e)
+        {
+            await((Image)sender).FadeTo(0.8);
+            await Navigation.PushAsync(new CouruselScreenPage(false));
+            await((Image)sender).FadeTo(1);
         }
     }
 }

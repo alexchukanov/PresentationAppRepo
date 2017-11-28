@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App36"
-             x:Class="App36.MainPage"
+             x:Class="App36.MainPage"             
              Title="Mobile App Portfolio" Padding="0" BackgroundColor="Black">
 
     <ContentPage.ToolbarItems>
@@ -24,10 +24,14 @@
                 <ColumnDefinition Width ="*" />                
             </Grid.ColumnDefinitions>
 
-        <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"  Aspect="Fill"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
-                        <Image.GestureRecognizers>
+            <Image Grid.Row="0" Grid.Column="0" Source="Marketing.png"  Aspect="Fill"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
+                       <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
+            <!--
+                        <Image.Behaviors>
+                           <local:TileBehavior/>
+                        </Image.Behaviors> -->
             </Image>
 
             <Image Grid.Row="0" Grid.Column="1" Source="Production.png" Aspect="Fill"  HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" >

@@ -15,7 +15,11 @@
                 <ColumnDefinition Width ="*" />
             </Grid.ColumnDefinitions>
 
-            <Image Grid.Row="0" Grid.Column="0" Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start"/>
+            <Image Grid.Row="0" Grid.Column="0" Source="WorkScreen.png" VerticalOptions="Center" HorizontalOptions="Start">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnWorkScreenTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
 
             <Image Grid.Row="0" Grid.Column="0" Source="ic_slideshow_black_24dp.png"  HorizontalOptions="End" VerticalOptions="End" Margin="5" Opacity="0.4">
                 <Image.GestureRecognizers>
