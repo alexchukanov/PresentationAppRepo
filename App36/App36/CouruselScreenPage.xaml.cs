@@ -15,14 +15,12 @@ namespace App36
     {
         public ObservableCollection<WorkScreen> WorkScreenList { get; set; }
 
-        int screenNum = 0;
-        bool isTimerRun = false;
-        int sweepPeriod = 5;
-
+        int maxScreenNum = 0; 
+      
         public CouruselScreenPage(bool isSlideShow)
-        {
+        {    
             InitializeComponent();
-                       
+
             var workScreenList = new ObservableCollection<WorkScreen>
             {
                     new WorkScreen
@@ -49,60 +47,43 @@ namespace App36
 
             WorkScreenList = workScreenList;
 
-            cwWorkScreen.ItemsSource = WorkScreenList;
-            screenNum = WorkScreenList.Count();
+            maxScreenNum = WorkScreenList.Count();
 
-            if(isSlideShow)
-            {
-                SlideShow();
-            }            
+            BindingContext = this;
         }
-
-        private  void SlideShow()
-        {
-            isTimerRun = true;
-
-            Device.StartTimer(TimeSpan.FromSeconds(sweepPeriod), () =>
-            {
-                if (cwWorkScreen.Position < screenNum - 1)
-                {
-                    ++cwWorkScreen.Position;                    
-                }
-                else
-                {
-                    cwWorkScreen.Position = 0;
-                }
-
-                return isTimerRun;
-            }
-            );           
-        }
-
+        
         private void btBack_Tapped(object sender, EventArgs e)
         {
-            isTimerRun = false;
-
-            if (cwWorkScreen.Position > 0)
+            if(cwWorkScreen.Position > 0)
             {               
                 --cwWorkScreen.Position;
             }
-            isTimerRun = false;
         }
 
         private void btForward_Tapped(object sender, EventArgs e)
         {
-            isTimerRun = false;
-
-            if (cwWorkScreen.Position < screenNum - 1)
+            if (cwWorkScreen.Position < maxScreenNum - 1)
             {
                 ++cwWorkScreen.Position;
-            }
-            isTimerRun = false;
+            }            
         }
 
-        private void btImage_Tapped(object sender, EventArgs e)
-        {
-            isTimerRun = false;
+        
+        private void cwWorkScreen_PositionSelected(object sender, SelectedPositionChangedEventArgs e)
+        {           
+            if(cwWorkScreen.Position == 0)
+            {
+                btBack.Opacity = 0;
+            }
+            else if (cwWorkScreen.Position == maxScreenNum - 1)
+            {
+                btForward.Opacity = 0;
+            }
+            else
+            {
+                btBack.Opacity = 0.6;
+                btForward.Opacity = 0.6;
+            }
         }
     }
 }

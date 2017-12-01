@@ -21,9 +21,9 @@
                 </Image.GestureRecognizers>
             </Image>
 
-            <Image Grid.Row="0" Grid.Column="0" Source="ic_slideshow_black_24dp.png"  HorizontalOptions="End" VerticalOptions="End" Margin="5" Opacity="0.4">
+            <Image Grid.Row="0" Grid.Column="0" Source="ic_more_horiz_black_24dp.png"  HorizontalOptions="End" VerticalOptions="End" Margin="0, 0, 10, 10" Opacity="0.4">
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnMoreScreenTapped" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Tapped="OnWorkScreenTapped" NumberOfTapsRequired="1" />
                 </Image.GestureRecognizers>
             </Image>
             
@@ -43,8 +43,12 @@
             
             <Label Grid.Row="0" Grid.Column="0" FontSize="28" FontAttributes="Bold" Text="Illy Locator" TextColor="Goldenrod" />
             <Label Grid.Row="1" Grid.Column="0" FontSize="22"  Text="Illy" TextColor="Gray" />
-            <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"  Source="LogoIlly.png" HorizontalOptions="EndAndExpand"  />
-
+            <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"  Source="LogoIlly.png" HorizontalOptions="EndAndExpand" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCompanyLogoTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+                
             <BoxView  Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" Margin="0, 10, 0, 0" HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand"/>
 
             <Label Grid.Row="3" Grid.Column="0" FontSize="20" Margin="0, 10, 0, 0" Text="Categoria: Marketing" TextColor="Goldenrod" />

@@ -12,10 +12,7 @@ namespace App36
         public App()
         {
             InitializeComponent();
-
-            MainPage = new App36.MainPage();
-            //MainPage = new App36.WorkPage();
-
+                        
             MainPage = new NavigationPage(new MainPage());
         }
 

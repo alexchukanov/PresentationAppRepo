@@ -39,8 +39,13 @@ namespace App36
         private async void OnWorkScreenTapped(object sender, EventArgs e)
         {
             await((Image)sender).FadeTo(0.8);
-            await Navigation.PushAsync(new CouruselScreenPage(false));
+            await Navigation.PushAsync(new CouruselScreenPage(true));
             await((Image)sender).FadeTo(1);
+        }
+
+        private void OnCompanyLogoTapped(object sender, EventArgs e)
+        {
+
         }
     }
 }

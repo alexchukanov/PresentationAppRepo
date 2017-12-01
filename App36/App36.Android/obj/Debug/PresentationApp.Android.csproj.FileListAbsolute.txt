@@ -133,6 +133,8 @@ C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_slideshow_black_24dp.png
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\R.cs.flag
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\uploadflags.txt
+C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\metidelogo.png
+C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\res\drawable\ic_more_horiz_black_24dp.png
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\bin\Debug\App36.dll.mdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\bin\Debug\App36.Android.dll.mdb
 C:\Metide\MetideRepo\PresentationApp\App36\App36.Android\obj\Debug\android\assets\App36.Android.dll.mdb
